@@ -6,20 +6,6 @@ import java.util.regex.Pattern;
 
 public class MultipleStringOccurrenceWithMatcher {
 
-    public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a String: ");
-        String s = sc.nextLine();
-        System.out.print("Word to find at different places: ");
-        String word = sc.nextLine();
-
-        List<String> res = stringOccurrence(s,word);
-        for(int i=0;i<res.size();i++){
-            System.out.println(res.get(i));
-        }
-
-    }
-
     public static List<String> stringOccurrence(String s,String word) {
         Pattern pattern = Pattern.compile(word);
         Matcher matcher = pattern.matcher(s);
