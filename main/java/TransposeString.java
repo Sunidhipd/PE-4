@@ -2,13 +2,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class TransposeString {
-    public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a String : ");
-        String s=sc.nextLine();
-        String res=Transpose(s);
-        System.out.println("Transposed String : "+ res );
-    }
 
     public static String Transpose(String word){
          String res="";
